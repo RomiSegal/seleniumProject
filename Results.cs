@@ -30,13 +30,13 @@ namespace TestProject1
             {
                 switch (key)
                 {
-                    case "Price_Lower_then":
+                    case "Price_Lower_Then":
                         xPath += "and descendant::span[@class='a-offscreen' and translate(text(),'$,','')<" + filters[key] + " and parent::span[not(contains(@data-a-strike,'true'))]]";
                         break;
-                    case "Price_higger_then":
-                        xPath += "and descendant::span[@class='a-offscreen' and translate(text(),'$,','')>" + filters[key] + " and parent::span[not(contains(@data-a-strike,'true'))]]";
+                    case "Price_Hiegher_OR_Equal_Then":
+                        xPath += "and descendant::span[@class='a-offscreen' and translate(text(),'$,','')>=" + filters[key] + " and parent::span[not(contains(@data-a-strike,'true'))]]";
                         break;
-                    case "freeShipping":
+                    case "Free_Shipping":
                         if (filters[key].Equals("true"))
                         {
                             xPath += "and descendant::span[@class='a-color-base a-text-bold' and contains (text(),'FREE')]";

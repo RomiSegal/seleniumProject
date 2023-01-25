@@ -16,9 +16,9 @@ namespace TestProject1
         private IWebDriver driver;
         public Dictionary<string, string> filters = new Dictionary<string, string>()
         {
-            {"Price_Lower_then","100"},
-            {"Price_higger_then","10"},
-            {"freeShipping","true"}
+            {"Price_Lower_Then","100"},
+            {"Price_Hiegher_OR_Equal_Then","50"},
+            {"Free_Shipping","true"}
         };    
 
         [SetUp]
