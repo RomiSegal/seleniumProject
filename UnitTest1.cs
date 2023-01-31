@@ -17,7 +17,7 @@ namespace TestProject1
         public Dictionary<string, string> filters = new Dictionary<string, string>()
         {
             {"Price_Lower_Then","300"},
-            {"Price_Higer_OR_Equal_Then","10"},
+            {"Price_Higher_OR_Equal_Then","10"},
             {"Free_Shipping","true"}
         };    
 

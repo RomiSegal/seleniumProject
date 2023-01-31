@@ -33,7 +33,7 @@ namespace TestProject1
                     case "Price_Lower_Then":
                         xPath += "and descendant::span[@class='a-offscreen' and translate(text(),'$,','')<" + filters[key] + " and parent::span[not(contains(@data-a-strike,'true'))]]";
                         break;
-                    case "Price_Higer_OR_Equal_Then":
+                    case "Price_Higher_OR_Equal_Then":
                         xPath += "and descendant::span[@class='a-offscreen' and translate(text(),'$,','')>=" + filters[key] + " and parent::span[not(contains(@data-a-strike,'true'))]]";
                         break;
                     case "Free_Shipping":
