@@ -16,8 +16,8 @@ namespace TestProject1
         private IWebDriver driver;
         public Dictionary<string, string> filters = new Dictionary<string, string>()
         {
-            {"Price_Lower_Then","100"},
-            {"Price_Hiegher_OR_Equal_Then","50"},
+            {"Price_Lower_Then","300"},
+            {"Price_Higer_OR_Equal_Then","10"},
             {"Free_Shipping","true"}
         };    
 
@@ -33,7 +33,7 @@ namespace TestProject1
         public void Test1()
         {
             Amazon amazon= new Amazon(this.driver);
-            amazon.Pages.Home.SearchBar.Text = "mouse";
+            amazon.Pages.Home.SearchBar.Text = "computer";
             amazon.Pages.Home.SearchBar.Click();
             amazon.Pages.Results.GetResultsBy(this.filters);
             Assert.Pass();
